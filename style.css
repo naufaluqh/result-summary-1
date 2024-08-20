@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(221, 100%, 96%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.card {
+  width: 600px;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+}
+
+/* Left section */
+
+.result-section {
+  width: 50%;
+  background: linear-gradient(to bottom, #7857ff 0%, #2e2be9 100%);
+  padding: 25px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.result-title {
+  color: rgb(190, 190, 190);
+  margin-bottom: 30px;
+}
+
+.score-circle {
+  padding: 30px;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to bottom, #4e21ca 0%, hsl(241, 81%, 54%) 100%);
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  text-shadow: 5px #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.score-value {
+  color: aliceblue;
+  font-size: 3.5em;
+}
+
+.score-max {
+  color: rgb(195, 190, 190);
+}
+
+.result-status {
+  color: rgb(224, 228, 232);
+  padding: 15px;
+}
+
+.result-description {
+  color: rgb(197, 192, 192);
+  font-size: 18px;
+}
+
+/* Right section */
+
+.summary-section {
+  width: 50%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.summary-title {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+
+.summary-item {
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px;
+  margin: 10px 0;
+}
+
+.summary-label {
+  display: flex;
+  font-weight: 700;
+}
+
+.summary-item .summary-label img {
+  margin-right: 5px;
+}
+
+.summary-score {
+  color: darkgray;
+  font-weight: 700;
+}
+
+.summary-score span {
+  color: hsl(224, 30%, 27%);
+}
+
+.reaction {
+  background: hsla(0, 100%, 93%, 0.5);
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background: hsl(39, 100%, 92%, 0.5);
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background: hsl(166, 100%, 94%, 0.5);
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background: hsl(234, 85%, 95%, 0.5);
+  color: hsl(234, 85%, 45%);
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  padding: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #4e21ca 0%, hsl(241, 81%, 54%) 100%);
+}
